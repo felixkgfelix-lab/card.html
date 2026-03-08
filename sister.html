@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта!</title>
+    <style>
+        /* Основные стили */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff5f7 0%, #fce4ec 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+        }
+
+        /* Контейнер открытки */
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid #f8bbd0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Анимация появления */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #d81b60;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .flower {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Кнопка с сюрпризом */
+        .btn {
+            background-color: #d81b60;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #ad1457;
+        }
+
+        /* Декоративные элементы */
+        .confetti {
+            color: #f06292;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="flower">🌸🌷✨</div>
+        <h1>С 8 Марта!</h1>
+        <p>
+            Дорогая сестра! <br><br>
+            Поздравляю тебя с этим прекрасным весенним праздником. 
+            Пусть каждый твой день будет наполнен светом, вдохновением и радостью. 
+            Ты — удивительный человек, и я искренне желаю тебе счастья, 
+            улыбок и исполнения всех самых заветных желаний.
+        </p>
+        <p class="confetti">Пусть весна цветет в твоем сердце всегда!</p>
+        
+        <button class="btn" onclick="celebrate()">Нажми для сюрприза</button>
+    </div>
+
+    <script>
+        function celebrate() {
+            alert("Ты самая лучшая сестра в мире! 💖");
+            // Можно добавить запуск конфетти или изменение фона
+            document.body.style.background = "linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)";
+        }
+    </script>
+
+</body>
+</html>
